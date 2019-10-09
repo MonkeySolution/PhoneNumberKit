@@ -56,9 +56,9 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
         didSet {
             partialFormatter.withPrefix = withPrefix
             if withPrefix == false {
-                self.keyboardType = UIKeyboardType.numberPad
+                //self.keyboardType = UIKeyboardType.numberPad
             } else {
-                self.keyboardType = UIKeyboardType.phonePad
+                //self.keyboardType = UIKeyboardType.phonePad
             }
         }
     }
@@ -147,8 +147,8 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
     }
 
     func setup() {
-        self.autocorrectionType = .no
-        self.keyboardType = UIKeyboardType.phonePad
+        //self.autocorrectionType = .no
+        //self.keyboardType = UIKeyboardType.phonePad
         super.delegate = self
     }
 
