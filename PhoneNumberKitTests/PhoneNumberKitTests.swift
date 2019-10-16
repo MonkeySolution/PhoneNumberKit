@@ -13,7 +13,7 @@ import PhoneNumberKit
 
 class PhoneNumberKitTests: XCTestCase {
     
-    let phoneNumberKit = LibPhoneNumberKit()
+    let phoneNumberKit = PhoneNumberKit()
     
     override func setUp() {
         super.setUp()
@@ -374,7 +374,7 @@ class PhoneNumberKitTests: XCTestCase {
 
     //  Test countries for code function
     func testCountriesForCodeInvalid() {
-        let phoneNumberKit = LibPhoneNumberKit()
+        let phoneNumberKit = PhoneNumberKit()
         XCTAssertEqual(phoneNumberKit.countries(withCode: 424242)?.count, nil)
     }
 

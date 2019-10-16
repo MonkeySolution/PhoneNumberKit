@@ -13,7 +13,7 @@ import XCTest
 
 class PhoneNumberKitParsingTests: XCTestCase {
     
-    let phoneNumberKit = LibPhoneNumberKit()
+    let phoneNumberKit = PhoneNumberKit()
     
     override func setUp() {
         super.setUp()
