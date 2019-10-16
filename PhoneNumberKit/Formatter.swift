@@ -12,7 +12,7 @@ final class Formatter {
 
     weak var regexManager: RegexManager?
 
-    init(phoneNumberKit: PhoneNumberKit) {
+    init(phoneNumberKit: LibPhoneNumberKit) {
         self.regexManager = phoneNumberKit.regexManager
     }
 

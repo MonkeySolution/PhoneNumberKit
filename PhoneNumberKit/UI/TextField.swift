@@ -12,7 +12,7 @@ import UIKit
 /// Custom text field that formats phone numbers
 open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
 
-    public let phoneNumberKit = PhoneNumberKit()
+    public let phoneNumberKit = LibPhoneNumberKit()
 
     /// Override setText so number will be automatically formatted when setting text by code
     override open var text: String? {
@@ -34,7 +34,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
         super.text = newValue
     }
 
-    private lazy var _defaultRegion: String = PhoneNumberKit.defaultRegionCode()
+    private lazy var _defaultRegion: String = LibPhoneNumberKit.defaultRegionCode()
 
     /// Override region to set a custom region. Automatically uses the default region code.
     open var defaultRegion: String {
